@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+   <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+   <title> Stock Chart</title>
+</head>
+<body>
+   <div class="container"> 
+
+   <h1 style="color: green;">
+      Display Chart
+   </h1>
+   <p>Q2</p>
+   <select id="graphType">
+      <option value="#">Select</option>
+      <option value="Line Graph">Line Graph</option>
+      <option value="Bar Graph">Bar Graph</option>
+   </select>
+   <p>Q3</p>
+   <select id="timePeriod">
+      <option value="1d">Daily</option>
+      <option value="1wk">Weekly</option>
+      <option value="1mo">Monthly</option>
+      <option value="1y">Yeary</option>
+   </select>
+   <p>Q4</p>
+
+      <div class="double-line">
+   <input type="radio" id="dataSourceCSV" name="dataSource" value="csv" checked>
+   <label for="dataSourceCSV">CSV File</label>
+   <br><br>
+   <input type="File"  id="csvFileInput">
+   <br><br>
+   <button id="uploadCSVButton">Upload CSV</button>
+   </div>
+   <br>
+   <div class="double-line">
+   <input type="radio"  id="dataSourceYahoo" name="dataSource" value="yahoo">
+   <label for="dataSourceYahoo">Yahoo Finance</label>
+   <br><br>
+   <input type="text"  id="manualDataInput" placeholder="Enter data (comma-separated)">
+   <br><br>
+   <button id="addDataButton">Add Data</button> 
+</div>
+   </div>
+<script scr=script.js> </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.container{
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: border-box;
+	background-color: #f1f1f1;
+	text-align: center;
+}
+
+.graph-container{
+	margin-top: 50px;
+}
+
+.double-line{
+	border-top: 3px double red;
+}
